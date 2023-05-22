@@ -1,17 +1,224 @@
-body {
-    font-family: Arial, sans-serif;
+h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'bebas_neueregular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #6C55F7;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  body {
+    background: #BFC1F0;
     margin: 0;
     padding: 0;
+    font-family: 'bebas_neueregular', sans-serif;
   }
-  
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+         url('bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
   header {
-    background-color: #f2f2f2;
-    padding: 20px;
+    position: relative;
+    background: #002254;
+    height: 180px;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 0; 
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: translateY(-300px);
+    animation: slideIn 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .logo img {
+    width: 180px;
+    height: 116px;
+    background: url(logo.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  header h1 {
+    font-family: 'bebas_neueregular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    color: #59C3FF;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    padding-top: 3rem;
+    margin-left: 167px;
+    margin-top: 0;
+    transform: translateX(100%);
+    animation: slideIn2 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .login {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: translateY(-50%);
   }
   
-  h1 {
-    margin: 0;
+  .login img {
+    width: 80%;
+    height: 80%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+
+  .register {
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-50%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: translateY(-50%);
+  }
+  
+  .register img {
+    width: 80%;
+    height: 80%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .button-text {
+    display: block;
+    font-family: 'bebas_neueregular', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .login:hover, .register:hover {
+    transform: scale(1.1);
+}
+  
+  nav {
+    background-color: #6F6CFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between flex-start;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 40px;
+    justify-content: flex-start; 
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    margin-right: 60px;
+    transform: translateY(-300px);
+    animation: slideIn 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  .nav-menu li a {
+    color: #EDC6FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    color: #FFFFFF;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-150px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn2 {
+    from {
+      transform: translateX(100%); /* Starting position */
+    }
+    to {
+      transform: translateX(0); /* Final position */
+    }
+  }
+
+
+
+.nav-menu li:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.nav-menu li:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+.nav-menu li:nth-child(4){
+    animation-delay: 0.8s;
+}
+
+.nav-menu li:nth-child(5){
+    animation-delay: 1.0s;
+}
+
+.nav-menu li:nth-child(6){
+    animation-delay: 1.2s;
+}
+
+.nav-menu li:nth-child(7){
+    animation-delay: 1.4s;
+}
+
+.nav-menu li:nth-child(8){
+    animation-delay: 1.6s;
+}
+
+.nav-menu li:nth-child(9){
+    animation-delay: 1.8s;
+}
   
   .content {
     max-width: 800px;
@@ -35,8 +242,8 @@ body {
   }
   
   footer {
-    background-color: #f2f2f2;
-    padding: 10px;
     text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   

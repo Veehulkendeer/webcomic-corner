@@ -8,17 +8,45 @@
 </head>
 <body>
   <header>
-    <h1>Forum Page</h1>
+    <div class="logo">
+        <a id="logo-link" href="index.html"><img src="logo.png" alt="Logo"></a>
+      </div>
+  
+      <h1>Webcomic Corner</h1>
+  
+      <button class="login">
+        <a href="login.html"><img src="login.png" alt="Login">
+          <span class="button-text">Login</span>
+      </button>
+  
+      <button class="register">
+          <a href="register.html"><img src="register.png" alt="Register"></a>
+          <span class="button-text">Register</span>
+      </button>
+  
+    </header>
+    <nav>
+      <ul class="nav-menu">
+          <li><a id="home-link" href="index.html">Home</a></li>
+          <li><a href="#">Comics</a></li>
+          <li><a href="#">Challenges</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Creators</a></li>
+          <li><a id="forum-link" href="forum.html">Forum</a></li>
+          <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="content">
+    <h2>Forum</h2>
     <div class="forum-post">
-      <h2>Post Title</h2>
+      <h3>Post Title</h3>
       <p>Posted by John Doe on May 22, 2023</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan libero vel enim elementum, at consequat ipsum ultrices. Sed blandit orci ac lobortis auctor.</p>
     </div>
     <div class="forum-post">
-      <h2>Another Post Title</h2>
+      <h3>Another Post Title</h3>
       <p>Posted by Jane Smith on May 23, 2023</p>
       <p>Nulla commodo, dui at facilisis fringilla, lectus nisl eleifend justo, non sollicitudin nulla est id lectus.</p>
     </div>
