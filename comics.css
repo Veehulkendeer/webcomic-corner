@@ -1,16 +1,46 @@
 h2 {
     text-align: center;
     margin-left: 0;
-    top: 279px;
+    top: 10px;
     margin-bottom: 1rem;
     font-family: 'bebas_neueregular', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
-    color: #6C55F7;
-    -webkit-text-stroke: 1px #FFFFFF;
+    font-size: 10px;
+    color: transparent;
+    -webkit-text-stroke: transparent;
+    text-shadow: transparent;
+  }
+
+  .comics-btn {
+    position: relative;
+    left: 6.7%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6C55F7;
+    color: #EDC6FF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: 'bebas_neueregular', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+  }
+  
+  .comics-btn + .comics-btn + .comics-btn{
+    margin-left: 1.5rem;
+  }
+  
+  
+  .comics-btn:hover {
+    background-color: #4B36D1;
   }
 
 body {
@@ -232,10 +262,11 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #002254;
     padding: 20px;
     border-radius: 5px;
     margin: 1rem;
+    transition: scale 0.3s ease;
   }
   
   .comic-card img {
@@ -247,9 +278,15 @@ body {
   
   .comic-card h3 {
     margin: 10px 0;
-    color: #002254;
+    color: #EDC6FF;
     text-align: center;
   }
+
+  .comic-card:hover {
+    transform: scale(1.05);
+  }
+
+  
   
   footer {
     text-align: center;
