@@ -1,3 +1,18 @@
+h2 {
+    text-align: center;
+    margin-left: 0;
+    top: 279px;
+    margin-bottom: 1rem;
+    font-family: 'bebas_neueregular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #6C55F7;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
 body {
     background: #BFC1F0;
     margin: 0;
@@ -164,10 +179,10 @@ body {
 
 @keyframes slideIn2 {
     from {
-      transform: translateX(100%); 
+      transform: translateX(100%); /* Starting position */
     }
     to {
-      transform: translateX(0); 
+      transform: translateX(0); /* Final position */
     }
   }
 
@@ -204,142 +219,41 @@ body {
 .nav-menu li:nth-child(9){
     animation-delay: 1.8s;
 }
-
-  #featured-webcomics h2 {
-    text-align: center;
-    margin-left: 28px;
-    top: 279px;
-    margin-bottom: 1rem;
-    font-family: 'bebas_neueregular', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
-    color: #6C55F7;
-    -webkit-text-stroke: 1px #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
   
-  #featured-webcomics .grid {
+.comics-section {
     display: grid;
-    grid-template-columns: repeat(4, 312px);
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0;
   }
   
-  #featured-webcomics .item {
-    position: relative;
-    width: 302px;
-    height: 540px;
-    margin: 0.7rem;
-    margin-top: 0;
-    background: #002254;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  #featured-webcomics .item .genre {
-    font-family: 'bebas_neueregular', sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    color: #6C55F7;
-    margin-bottom: 10px;
-  }
-
-  #featured-webcomics .item .genre-1 {
-    color: rgba(121, 99, 255, 0.99);
-  }
-
-  #featured-webcomics .item .genre-2 {
-    color:#FF53D9;
-  }
-
-  #featured-webcomics .item .genre-3 {
-    color:#C21515;
-  }
-
-  #featured-webcomics .item .genre-4 {
-    color:#ECB800;
-  }
-  
-  #featured-webcomics h4 {
-    font-family: 'bebas_neueregular', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    color: #FFFFFF;
-    margin-bottom: 10px;
+  .comic-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-  } 
-
-  #featured-webcomics .thumbnail {
-    width: 100px; 
-    height: 100px; 
-    margin-bottom: 10px;
-    margin-top: 20px;
-    margin-left: 100px;
-  }
-  
-  #featured-webcomics .thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
-  #featured-webcomics .item h3 {
-    font-family: 'bebas_neueregular', sans-serif;
-    font-size: 24px;
-    color: #EDC6FF;
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  #featured-webcomics .box {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  #featured-webcomics p {
-    font-family: 'bebas_neueregular', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 1rem;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  #featured-webcomics .start-reading {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    background-color: #6C55F7;
-    color: #EDC6FF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 10px 20px;
-    text-decoration: none;
-    font-family: 'bebas_neueregular', sans-serif;
-    font-size: 16px;
+    background-color: #f0f0f0;
+    padding: 20px;
     border-radius: 5px;
-    text-align: center;
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.3s ease;
-    width: fit-content;
-    z-index: 1;
+    margin: 1rem;
   }
   
-  #featured-webcomics .start-reading:hover {
-    background-color: #4B36D1;
+  .comic-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
   }
-
+  
+  .comic-card h3 {
+    margin: 10px 0;
+    color: #002254;
+    text-align: center;
+  }
+  
   footer {
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+  
