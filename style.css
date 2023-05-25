@@ -205,6 +205,33 @@ body {
     animation-delay: 1.8s;
 }
 
+.search-bar {
+  align-items: right;
+  margin-left: 3rem;
+}
+
+.search-button {
+  display: inline-block;
+  background-color: #6C55F7;
+  color: #EDC6FF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: 'bebas_neueregular', sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  z-index: 1;
+}
+
+.search-button:hover {
+  background-color: #4B36D1;
+}
+
   #featured-webcomics h2 {
     text-align: center;
     margin-left: 28px;
@@ -382,82 +409,4 @@ body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  @media only screen and (max-width: 768px) {
-    header h1 {
-      font-size: 48px;
-      margin-left: 20px;
-    }
-
-    .login,
-    .register {
-      right: 5px;
-    }
-
-    .nav-menu {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-      padding: 15px;
-      position: relative;
-      user-select: none;
-    }
-  
-    .menu-icon span {
-      background: #EDC6FF;
-      display: block;
-      height: 2px;
-      position: relative;
-      transition: background 0.2s ease-out;
-      width: 18px;
-    }
-  
-    .menu-icon span:nth-child(1) {
-      top: 0px;
-    }
-  
-    .menu-icon span:nth-child(2),
-    .menu-icon span:nth-child(3) {
-      top: 6px;
-    }
-  
-    .menu-icon span:nth-child(4) {
-      top: 12px;
-    }
-  
-    .menu-icon.open span:nth-child(1) {
-      top: 6px;
-      transform: rotate(45deg);
-    }
-  
-    .menu-icon.open span:nth-child(2) {
-      top: 6px;
-      opacity: 0;
-    }
-  
-    .menu-icon.open span:nth-child(3) {
-      top: 6px;
-      transform: rotate(-45deg);
-    }
-  
-    .nav-menu.open {
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #6F6CFF;
-      width: 100%;
-    }
-  
-    .nav-menu.open li {
-      width: 100%;
-      text-align: center;
-      margin: 10px 0;
-    }
-  
-    .nav-menu.open a {
-      color: #EDC6FF;
-    }
-  }
+ 
