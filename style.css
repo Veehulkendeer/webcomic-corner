@@ -222,7 +222,7 @@ body {
   
   #featured-webcomics .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 19.5rem);
     grid-template-rows: repeat(4, auto);
   }
   
