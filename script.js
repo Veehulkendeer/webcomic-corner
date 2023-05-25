@@ -17,3 +17,16 @@ function loadHomePage(event) {
   };
   xhr.send();
 }
+
+const links = document.querySelectorAll('.comics-btn');
+
+links.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    links.forEach(lnk => {
+      lnk.classList.remove('active');
+    });
+    link.classList.add('active');
+  });
+});
+
